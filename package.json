@@ -1,0 +1,39 @@
+{
+  "name": "lux_tests",
+  "version": "1.0.0",
+  "description": "FashionHub Automation Framework - Playwright + TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "install:browsers": "npx playwright install",
+    "postinstall": "npm run install:browsers",
+
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+
+    "test:local": "cross-env TEST_ENV=local npx playwright test",
+    "test:staging": "cross-env TEST_ENV=staging npx playwright test",
+    "test:production": "cross-env TEST_ENV=production npx playwright test",
+
+    "test:login": "npx playwright test src/tests/Login.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.5.2",
+    "cross-env": "^7.0.3",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^17.2.2",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
