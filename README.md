@@ -109,4 +109,4 @@ npm run test:report
 
 ---
 
-READY TEST.
+READY TO TEST!
