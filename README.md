@@ -34,7 +34,7 @@ TESTING_ASSESSMENT/
 
 ---
 
-## 3) Install & First Run
+## 3) Install & Quick Start
 
 ```powershell
 npm install
